@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/bimal/Downloads/hft_lob/include
 
-CXX_FLAGSarm64 = -O3 -DNDEBUG -std=gnu++20 -arch arm64 -march=native
+CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64 -march=native
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++20 -arch arm64 -march=native
+CXX_FLAGS = -g -std=gnu++20 -arch arm64 -march=native
 

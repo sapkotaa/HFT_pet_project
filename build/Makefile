@@ -129,6 +129,93 @@ hft_lob/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/build
 .PHONY : hft_lob/fast
 
+#=============================================================================
+# Target rules for targets named feed_publisher
+
+# Build rule for target.
+feed_publisher: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 feed_publisher
+.PHONY : feed_publisher
+
+# fast build rule for target.
+feed_publisher/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/build
+.PHONY : feed_publisher/fast
+
+#=============================================================================
+# Target rules for targets named engine_subscriber
+
+# Build rule for target.
+engine_subscriber: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 engine_subscriber
+.PHONY : engine_subscriber
+
+# fast build rule for target.
+engine_subscriber/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/build
+.PHONY : engine_subscriber/fast
+
+#=============================================================================
+# Target rules for targets named supervisor
+
+# Build rule for target.
+supervisor: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 supervisor
+.PHONY : supervisor
+
+# fast build rule for target.
+supervisor/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/build
+.PHONY : supervisor/fast
+
+src/engine_subscriber.o: src/engine_subscriber.cpp.o
+.PHONY : src/engine_subscriber.o
+
+# target to build an object file
+src/engine_subscriber.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/src/engine_subscriber.cpp.o
+.PHONY : src/engine_subscriber.cpp.o
+
+src/engine_subscriber.i: src/engine_subscriber.cpp.i
+.PHONY : src/engine_subscriber.i
+
+# target to preprocess a source file
+src/engine_subscriber.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/src/engine_subscriber.cpp.i
+.PHONY : src/engine_subscriber.cpp.i
+
+src/engine_subscriber.s: src/engine_subscriber.cpp.s
+.PHONY : src/engine_subscriber.s
+
+# target to generate assembly for a file
+src/engine_subscriber.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/src/engine_subscriber.cpp.s
+.PHONY : src/engine_subscriber.cpp.s
+
+src/feed_publisher.o: src/feed_publisher.cpp.o
+.PHONY : src/feed_publisher.o
+
+# target to build an object file
+src/feed_publisher.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/src/feed_publisher.cpp.o
+.PHONY : src/feed_publisher.cpp.o
+
+src/feed_publisher.i: src/feed_publisher.cpp.i
+.PHONY : src/feed_publisher.i
+
+# target to preprocess a source file
+src/feed_publisher.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/src/feed_publisher.cpp.i
+.PHONY : src/feed_publisher.cpp.i
+
+src/feed_publisher.s: src/feed_publisher.cpp.s
+.PHONY : src/feed_publisher.s
+
+# target to generate assembly for a file
+src/feed_publisher.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/src/feed_publisher.cpp.s
+.PHONY : src/feed_publisher.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -153,6 +240,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/supervisor.o: src/supervisor.cpp.o
+.PHONY : src/supervisor.o
+
+# target to build an object file
+src/supervisor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/src/supervisor.cpp.o
+.PHONY : src/supervisor.cpp.o
+
+src/supervisor.i: src/supervisor.cpp.i
+.PHONY : src/supervisor.i
+
+# target to preprocess a source file
+src/supervisor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/src/supervisor.cpp.i
+.PHONY : src/supervisor.cpp.i
+
+src/supervisor.s: src/supervisor.cpp.s
+.PHONY : src/supervisor.s
+
+# target to generate assembly for a file
+src/supervisor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/src/supervisor.cpp.s
+.PHONY : src/supervisor.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -161,10 +272,22 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... engine_subscriber"
+	@echo "... feed_publisher"
 	@echo "... hft_lob"
+	@echo "... supervisor"
+	@echo "... src/engine_subscriber.o"
+	@echo "... src/engine_subscriber.i"
+	@echo "... src/engine_subscriber.s"
+	@echo "... src/feed_publisher.o"
+	@echo "... src/feed_publisher.i"
+	@echo "... src/feed_publisher.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/supervisor.o"
+	@echo "... src/supervisor.i"
+	@echo "... src/supervisor.s"
 .PHONY : help
 
 

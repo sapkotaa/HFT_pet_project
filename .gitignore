@@ -1,0 +1,4 @@
+build/
+*.o
+results/*.png
+__pycache__/

@@ -26,7 +26,7 @@ target_include_directories(feed_publisher PRIVATE include)
 add_executable(engine_subscriber src/engine_subscriber.cpp)
 target_include_directories(engine_subscriber PRIVATE include)
 
-
+add_executable(supervisor src/supervisor.cpp)
 
 
 

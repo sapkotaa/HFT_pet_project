@@ -164,6 +164,7 @@ CMakeFiles/hft_lob.dir/src/main.cpp.o: /Users/bimal/Downloads/hft_lob/src/main.c
   /Users/bimal/Downloads/hft_lob/include/market_data_feed.hpp \
   /Users/bimal/Downloads/hft_lob/include/object_pool.hpp \
   /Users/bimal/Downloads/hft_lob/include/order_book.hpp \
+  /Users/bimal/Downloads/hft_lob/include/results.hpp \
   /Users/bimal/Downloads/hft_lob/include/spsc_ring_buffer.hpp \
   /Users/bimal/Downloads/hft_lob/include/strategy.hpp \
   /Users/bimal/Downloads/hft_lob/include/timer.hpp \
@@ -2742,14 +2743,6 @@ CMakeFiles/hft_lob.dir/src/main.cpp.o: /Users/bimal/Downloads/hft_lob/src/main.c
 
 /opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__algorithm/in_fun_result.h:
 
-/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__memory/addressof.h:
-
-/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__algorithm/unwrap_range.h:
-
-/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__stop_token/stop_token.h:
-
-/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__algorithm/generate_n.h:
-
 /opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__new/placement_new_delete.h:
 
 /opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__math/logarithms.h:
@@ -2809,6 +2802,8 @@ CMakeFiles/hft_lob.dir/src/main.cpp.o: /Users/bimal/Downloads/hft_lob/src/main.c
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/sys/_types/_va_list.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/sys/_types/_gid_t.h:
+
+/Users/bimal/Downloads/hft_lob/include/results.hpp:
 
 /Users/bimal/Downloads/hft_lob/include/strategy.hpp:
 
@@ -3123,6 +3118,14 @@ CMakeFiles/hft_lob.dir/src/main.cpp.o: /Users/bimal/Downloads/hft_lob/src/main.c
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/sys/_types/_intptr_t.h:
 
 /opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__memory/temp_value.h:
+
+/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__memory/addressof.h:
+
+/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__algorithm/unwrap_range.h:
+
+/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__stop_token/stop_token.h:
+
+/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1/__algorithm/generate_n.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/arm/types.h:
 

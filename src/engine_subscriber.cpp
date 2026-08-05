@@ -6,6 +6,7 @@
 // since it now includes the OS network stack.
 #include <arpa/inet.h>
 #include <sys/socket.h>
+#include <sys/time.h>
 #include <unistd.h>
 
 #include <cstdio>
@@ -58,6 +59,7 @@ int main(int argc, char** argv) {
     int rcvbuf = 4 * 1024 * 1024;
     setsockopt(sock, SOL_SOCKET, SO_RCVBUF, &rcvbuf, sizeof(rcvbuf));
 
+
     sockaddr_in local{};
     local.sin_family = AF_INET;
     local.sin_addr.s_addr = htonl(INADDR_ANY);
@@ -95,6 +97,11 @@ int main(int argc, char** argv) {
     uint64_t dropped = 0;
     while (true) {
         ssize_t n = recv(sock, &w, sizeof(w), 0);
+        if (n < 0)
+        {
+            std::printf("engine_subscriber: idle timeout (5s, no traffic) — treating as end of stream\n");
+            break;
+        }
         if (n != static_cast<ssize_t>(sizeof(w))) continue;  // partial/corrupt packet, skip
         if (w.id == 0) break;                                 // end-of-stream marker
 

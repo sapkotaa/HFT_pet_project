@@ -64,10 +64,16 @@ CMAKE_BINARY_DIR = /Users/bimal/Downloads/hft_lob/build
 
 # The main recursive "all" target.
 all: CMakeFiles/hft_lob.dir/all
+all: CMakeFiles/feed_publisher.dir/all
+all: CMakeFiles/engine_subscriber.dir/all
+all: CMakeFiles/supervisor.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/hft_lob.dir/codegen
+codegen: CMakeFiles/feed_publisher.dir/codegen
+codegen: CMakeFiles/engine_subscriber.dir/codegen
+codegen: CMakeFiles/supervisor.dir/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
@@ -76,6 +82,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/hft_lob.dir/clean
+clean: CMakeFiles/feed_publisher.dir/clean
+clean: CMakeFiles/engine_subscriber.dir/clean
+clean: CMakeFiles/supervisor.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -85,7 +94,7 @@ clean: CMakeFiles/hft_lob.dir/clean
 CMakeFiles/hft_lob.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=1,2 "Built target hft_lob"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=5,6 "Built target hft_lob"
 .PHONY : CMakeFiles/hft_lob.dir/all
 
 # Build rule for subdir invocation for target.
@@ -102,13 +111,109 @@ hft_lob: CMakeFiles/hft_lob.dir/rule
 # codegen rule for target.
 CMakeFiles/hft_lob.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=1,2 "Finished codegen for target hft_lob"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=5,6 "Finished codegen for target hft_lob"
 .PHONY : CMakeFiles/hft_lob.dir/codegen
 
 # clean rule for target.
 CMakeFiles/hft_lob.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hft_lob.dir/build.make CMakeFiles/hft_lob.dir/clean
 .PHONY : CMakeFiles/hft_lob.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/feed_publisher.dir
+
+# All Build rule for target.
+CMakeFiles/feed_publisher.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=3,4 "Built target feed_publisher"
+.PHONY : CMakeFiles/feed_publisher.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/feed_publisher.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/feed_publisher.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 0
+.PHONY : CMakeFiles/feed_publisher.dir/rule
+
+# Convenience name for target.
+feed_publisher: CMakeFiles/feed_publisher.dir/rule
+.PHONY : feed_publisher
+
+# codegen rule for target.
+CMakeFiles/feed_publisher.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=3,4 "Finished codegen for target feed_publisher"
+.PHONY : CMakeFiles/feed_publisher.dir/codegen
+
+# clean rule for target.
+CMakeFiles/feed_publisher.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/clean
+.PHONY : CMakeFiles/feed_publisher.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/engine_subscriber.dir
+
+# All Build rule for target.
+CMakeFiles/engine_subscriber.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=1,2 "Built target engine_subscriber"
+.PHONY : CMakeFiles/engine_subscriber.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/engine_subscriber.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/engine_subscriber.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 0
+.PHONY : CMakeFiles/engine_subscriber.dir/rule
+
+# Convenience name for target.
+engine_subscriber: CMakeFiles/engine_subscriber.dir/rule
+.PHONY : engine_subscriber
+
+# codegen rule for target.
+CMakeFiles/engine_subscriber.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=1,2 "Finished codegen for target engine_subscriber"
+.PHONY : CMakeFiles/engine_subscriber.dir/codegen
+
+# clean rule for target.
+CMakeFiles/engine_subscriber.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/engine_subscriber.dir/build.make CMakeFiles/engine_subscriber.dir/clean
+.PHONY : CMakeFiles/engine_subscriber.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/supervisor.dir
+
+# All Build rule for target.
+CMakeFiles/supervisor.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=7,8 "Built target supervisor"
+.PHONY : CMakeFiles/supervisor.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/supervisor.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/supervisor.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/bimal/Downloads/hft_lob/build/CMakeFiles 0
+.PHONY : CMakeFiles/supervisor.dir/rule
+
+# Convenience name for target.
+supervisor: CMakeFiles/supervisor.dir/rule
+.PHONY : supervisor
+
+# codegen rule for target.
+CMakeFiles/supervisor.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles --progress-num=7,8 "Finished codegen for target supervisor"
+.PHONY : CMakeFiles/supervisor.dir/codegen
+
+# clean rule for target.
+CMakeFiles/supervisor.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/clean
+.PHONY : CMakeFiles/supervisor.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
