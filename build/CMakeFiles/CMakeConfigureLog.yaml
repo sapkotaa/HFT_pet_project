@@ -1,0 +1,1798 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/uname"
+      - "/opt/anaconda3/condabin/uname"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/uname"
+      - "/Users/bimal/.local/bin/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/uname"
+      - "/opt/homebrew/bin/uname"
+      - "/opt/homebrew/sbin/uname"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/uname"
+      - "/usr/local/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 23.3.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/gmake"
+      - "/opt/anaconda3/condabin/gmake"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/gmake"
+      - "/Users/bimal/.local/bin/gmake"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/opt/homebrew/sbin/gmake"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/Applications/VMware Fusion.app/Contents/Public/gmake"
+      - "/Users/bimal/.zsh/misc/gmake"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/gmake"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/gmake"
+      - "/opt/homebrew/opt/llvm/bin/make"
+      - "/opt/anaconda3/condabin/make"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/make"
+      - "/Users/bimal/.local/bin/make"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/make"
+      - "/opt/homebrew/bin/make"
+      - "/opt/homebrew/sbin/make"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/make"
+      - "/usr/local/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "/opt/homebrew/opt/llvm/bin/clang++"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/clang++"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:468 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:506 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /opt/homebrew/opt/llvm/bin/clang++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /Users/bimal/Downloads/hft_lob/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:296 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler apple sysroot: "/opt/homebrew/opt/llvm/bin/clang++" "-E" "apple-sdk.cpp"
+        # 1 "apple-sdk.cpp"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 537 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.cpp" 2
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 86 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 87 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 206 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/Availability.h" 1 3 4
+        # 173 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 176 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityInternal.h" 3 4
+        # 1 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 177 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 174 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/Availability.h" 2 3 4
+        # 207 "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.cpp" 2
+        
+        
+      Found apple sysroot: /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/ar"
+      - "/opt/anaconda3/condabin/ar"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/ar"
+      - "/Users/bimal/.local/bin/ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/ar"
+      - "/opt/homebrew/bin/ar"
+      - "/opt/homebrew/sbin/ar"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/ar"
+      - "/usr/local/bin/ar"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib"
+      - "ranlib"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/strip"
+      - "/opt/anaconda3/condabin/strip"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/strip"
+      - "/Users/bimal/.local/bin/strip"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/strip"
+      - "/opt/homebrew/bin/strip"
+      - "/opt/homebrew/sbin/strip"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/strip"
+      - "/usr/local/bin/strip"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/ld"
+      - "/opt/anaconda3/condabin/ld"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/ld"
+      - "/Users/bimal/.local/bin/ld"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/ld"
+      - "/opt/homebrew/bin/ld"
+      - "/opt/homebrew/sbin/ld"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/ld"
+      - "/usr/local/bin/ld"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-nm"
+      - "nm"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-nm"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objdump"
+      - "objdump"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-objdump"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-objcopy"
+      - "objcopy"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-objcopy"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-readelf"
+      - "readelf"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-readelf"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-dlltool"
+      - "dlltool"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-dlltool"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-addr2line"
+      - "addr2line"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    found: "/opt/homebrew/opt/llvm/bin/llvm-addr2line"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:243 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/tapi"
+      - "/opt/anaconda3/condabin/tapi"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/tapi"
+      - "/Users/bimal/.local/bin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/opt/homebrew/sbin/tapi"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/Applications/VMware Fusion.app/Contents/Public/tapi"
+      - "/Users/bimal/.zsh/misc/tapi"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/tapi"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:26 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_AR"
+    description: "LLVM archiver"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ar-21.1"
+      - "llvm-ar-21"
+      - "llvm-ar21"
+      - "llvm-ar"
+    candidate_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/"
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ar-21.1"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ar-21.1"
+      - "/opt/anaconda3/condabin/llvm-ar-21.1"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ar-21.1"
+      - "/Users/bimal/.local/bin/llvm-ar-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ar-21.1"
+      - "/opt/homebrew/bin/llvm-ar-21.1"
+      - "/opt/homebrew/sbin/llvm-ar-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ar-21.1"
+      - "/usr/local/bin/llvm-ar-21.1"
+      - "/usr/bin/llvm-ar-21.1"
+      - "/bin/llvm-ar-21.1"
+      - "/usr/sbin/llvm-ar-21.1"
+      - "/sbin/llvm-ar-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ar-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ar-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ar-21.1"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ar-21.1"
+      - "/Users/bimal/.zsh/misc/llvm-ar-21.1"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ar-21.1"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ar-21.1"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ar-21"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ar-21"
+      - "/opt/anaconda3/condabin/llvm-ar-21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ar-21"
+      - "/Users/bimal/.local/bin/llvm-ar-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ar-21"
+      - "/opt/homebrew/bin/llvm-ar-21"
+      - "/opt/homebrew/sbin/llvm-ar-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ar-21"
+      - "/usr/local/bin/llvm-ar-21"
+      - "/usr/bin/llvm-ar-21"
+      - "/bin/llvm-ar-21"
+      - "/usr/sbin/llvm-ar-21"
+      - "/sbin/llvm-ar-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ar-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ar-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ar-21"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ar-21"
+      - "/Users/bimal/.zsh/misc/llvm-ar-21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ar-21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ar-21"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ar21"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ar21"
+      - "/opt/anaconda3/condabin/llvm-ar21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ar21"
+      - "/Users/bimal/.local/bin/llvm-ar21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ar21"
+      - "/opt/homebrew/bin/llvm-ar21"
+      - "/opt/homebrew/sbin/llvm-ar21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ar21"
+      - "/usr/local/bin/llvm-ar21"
+      - "/usr/bin/llvm-ar21"
+      - "/bin/llvm-ar21"
+      - "/usr/sbin/llvm-ar21"
+      - "/sbin/llvm-ar21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ar21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ar21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ar21"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ar21"
+      - "/Users/bimal/.zsh/misc/llvm-ar21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ar21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ar21"
+    found: "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ar"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:38 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_RANLIB"
+    description: "Generate index for LLVM archive"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "llvm-ranlib-21.1"
+      - "llvm-ranlib-21"
+      - "llvm-ranlib21"
+      - "llvm-ranlib"
+    candidate_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/"
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ranlib-21.1"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ranlib-21.1"
+      - "/opt/anaconda3/condabin/llvm-ranlib-21.1"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ranlib-21.1"
+      - "/Users/bimal/.local/bin/llvm-ranlib-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ranlib-21.1"
+      - "/opt/homebrew/bin/llvm-ranlib-21.1"
+      - "/opt/homebrew/sbin/llvm-ranlib-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ranlib-21.1"
+      - "/usr/local/bin/llvm-ranlib-21.1"
+      - "/usr/bin/llvm-ranlib-21.1"
+      - "/bin/llvm-ranlib-21.1"
+      - "/usr/sbin/llvm-ranlib-21.1"
+      - "/sbin/llvm-ranlib-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ranlib-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ranlib-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ranlib-21.1"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ranlib-21.1"
+      - "/Users/bimal/.zsh/misc/llvm-ranlib-21.1"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ranlib-21.1"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ranlib-21.1"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ranlib-21"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ranlib-21"
+      - "/opt/anaconda3/condabin/llvm-ranlib-21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ranlib-21"
+      - "/Users/bimal/.local/bin/llvm-ranlib-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ranlib-21"
+      - "/opt/homebrew/bin/llvm-ranlib-21"
+      - "/opt/homebrew/sbin/llvm-ranlib-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ranlib-21"
+      - "/usr/local/bin/llvm-ranlib-21"
+      - "/usr/bin/llvm-ranlib-21"
+      - "/bin/llvm-ranlib-21"
+      - "/usr/sbin/llvm-ranlib-21"
+      - "/sbin/llvm-ranlib-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ranlib-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ranlib-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ranlib-21"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ranlib-21"
+      - "/Users/bimal/.zsh/misc/llvm-ranlib-21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ranlib-21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ranlib-21"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ranlib21"
+      - "/opt/homebrew/opt/llvm/bin/llvm-ranlib21"
+      - "/opt/anaconda3/condabin/llvm-ranlib21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/llvm-ranlib21"
+      - "/Users/bimal/.local/bin/llvm-ranlib21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/llvm-ranlib21"
+      - "/opt/homebrew/bin/llvm-ranlib21"
+      - "/opt/homebrew/sbin/llvm-ranlib21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/llvm-ranlib21"
+      - "/usr/local/bin/llvm-ranlib21"
+      - "/usr/bin/llvm-ranlib21"
+      - "/bin/llvm-ranlib21"
+      - "/usr/sbin/llvm-ranlib21"
+      - "/sbin/llvm-ranlib21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/llvm-ranlib21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/llvm-ranlib21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/llvm-ranlib21"
+      - "/Applications/VMware Fusion.app/Contents/Public/llvm-ranlib21"
+      - "/Users/bimal/.zsh/misc/llvm-ranlib21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/llvm-ranlib21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/llvm-ranlib21"
+    found: "/opt/homebrew/Cellar/llvm/21.1.5/bin/llvm-ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Compiler/Clang-FindBinUtils.cmake:50 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS"
+    description: "`clang-scan-deps` dependency scanner"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "clang-scan-deps-21.1"
+      - "clang-scan-deps-21"
+      - "clang-scan-deps21"
+      - "clang-scan-deps"
+    candidate_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/"
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps-21.1"
+      - "/opt/homebrew/opt/llvm/bin/clang-scan-deps-21.1"
+      - "/opt/anaconda3/condabin/clang-scan-deps-21.1"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/clang-scan-deps-21.1"
+      - "/Users/bimal/.local/bin/clang-scan-deps-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/clang-scan-deps-21.1"
+      - "/opt/homebrew/bin/clang-scan-deps-21.1"
+      - "/opt/homebrew/sbin/clang-scan-deps-21.1"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/clang-scan-deps-21.1"
+      - "/usr/local/bin/clang-scan-deps-21.1"
+      - "/usr/bin/clang-scan-deps-21.1"
+      - "/bin/clang-scan-deps-21.1"
+      - "/usr/sbin/clang-scan-deps-21.1"
+      - "/sbin/clang-scan-deps-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/clang-scan-deps-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/clang-scan-deps-21.1"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/clang-scan-deps-21.1"
+      - "/Applications/VMware Fusion.app/Contents/Public/clang-scan-deps-21.1"
+      - "/Users/bimal/.zsh/misc/clang-scan-deps-21.1"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/clang-scan-deps-21.1"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/clang-scan-deps-21.1"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps-21"
+      - "/opt/homebrew/opt/llvm/bin/clang-scan-deps-21"
+      - "/opt/anaconda3/condabin/clang-scan-deps-21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/clang-scan-deps-21"
+      - "/Users/bimal/.local/bin/clang-scan-deps-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/clang-scan-deps-21"
+      - "/opt/homebrew/bin/clang-scan-deps-21"
+      - "/opt/homebrew/sbin/clang-scan-deps-21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/clang-scan-deps-21"
+      - "/usr/local/bin/clang-scan-deps-21"
+      - "/usr/bin/clang-scan-deps-21"
+      - "/bin/clang-scan-deps-21"
+      - "/usr/sbin/clang-scan-deps-21"
+      - "/sbin/clang-scan-deps-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/clang-scan-deps-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/clang-scan-deps-21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/clang-scan-deps-21"
+      - "/Applications/VMware Fusion.app/Contents/Public/clang-scan-deps-21"
+      - "/Users/bimal/.zsh/misc/clang-scan-deps-21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/clang-scan-deps-21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/clang-scan-deps-21"
+      - "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps21"
+      - "/opt/homebrew/opt/llvm/bin/clang-scan-deps21"
+      - "/opt/anaconda3/condabin/clang-scan-deps21"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/clang-scan-deps21"
+      - "/Users/bimal/.local/bin/clang-scan-deps21"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/clang-scan-deps21"
+      - "/opt/homebrew/bin/clang-scan-deps21"
+      - "/opt/homebrew/sbin/clang-scan-deps21"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/clang-scan-deps21"
+      - "/usr/local/bin/clang-scan-deps21"
+      - "/usr/bin/clang-scan-deps21"
+      - "/bin/clang-scan-deps21"
+      - "/usr/sbin/clang-scan-deps21"
+      - "/sbin/clang-scan-deps21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/clang-scan-deps21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/clang-scan-deps21"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/clang-scan-deps21"
+      - "/Applications/VMware Fusion.app/Contents/Public/clang-scan-deps21"
+      - "/Users/bimal/.zsh/misc/clang-scan-deps21"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/clang-scan-deps21"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/clang-scan-deps21"
+    found: "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:66 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_INSTALL_NAME_TOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "install_name_tool"
+    candidate_directories:
+      - "/opt/homebrew/opt/llvm/bin/"
+      - "/opt/anaconda3/condabin/"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/"
+      - "/Users/bimal/.local/bin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/"
+      - "/opt/homebrew/bin/"
+      - "/opt/homebrew/sbin/"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/"
+      - "/usr/local/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/Applications/VMware Fusion.app/Contents/Public/"
+      - "/Users/bimal/.zsh/misc/"
+      - "/usr/local/mysql-8.3.0-macos14-arm64/bin/"
+      - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin/"
+    searched_directories:
+      - "/opt/homebrew/opt/llvm/bin/install_name_tool"
+      - "/opt/anaconda3/condabin/install_name_tool"
+      - "/Users/bimal/.nvm/versions/node/v18.19.1/bin/install_name_tool"
+      - "/Users/bimal/.local/bin/install_name_tool"
+      - "/Library/Frameworks/Python.framework/Versions/3.12/bin/install_name_tool"
+      - "/opt/homebrew/bin/install_name_tool"
+      - "/opt/homebrew/sbin/install_name_tool"
+      - "/Library/Frameworks/Python.framework/Versions/3.10/bin/install_name_tool"
+      - "/usr/local/bin/install_name_tool"
+    found: "/usr/bin/install_name_tool"
+    search_context:
+      ENV{PATH}:
+        - "/opt/homebrew/opt/llvm/bin"
+        - "/opt/anaconda3/condabin"
+        - "/Users/bimal/.nvm/versions/node/v18.19.1/bin"
+        - "/Users/bimal/.local/bin"
+        - "/Library/Frameworks/Python.framework/Versions/3.12/bin"
+        - "/opt/homebrew/bin"
+        - "/opt/homebrew/sbin"
+        - "/Library/Frameworks/Python.framework/Versions/3.10/bin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/Applications/VMware Fusion.app/Contents/Public"
+        - "/Users/bimal/.zsh/misc"
+        - "/usr/local/mysql-8.3.0-macos14-arm64/bin"
+        - "/Users/bimal/mongodb-macos-aarch64-7.0.7/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M"
+      binary: "/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_24b1b/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_24b1b.dir/build.make CMakeFiles/cmTC_24b1b.dir/build
+        Building CXX object CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o
+        /opt/homebrew/opt/llvm/bin/clang++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Homebrew clang version 21.1.5
+        Target: arm64-apple-darwin23.3.0
+        Thread model: posix
+        InstalledDir: /opt/homebrew/Cellar/llvm/21.1.5/bin
+        Configuration file: /opt/homebrew/etc/clang/arm64-apple-darwin23.cfg
+        System configuration file directory: /opt/homebrew/etc/clang
+        User configuration file directory: /Users/bimal/.config/clang
+        clang++: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         (in-process)
+         "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-21" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.4a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M -resource-dir /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21 -dependency-file CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -internal-isystem /opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/Library/Frameworks -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 21.1.5 based upon LLVM 21.1.5 default target arm64-apple-darwin23.3.0
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/local/include"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/SubFrameworks"
+        ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1
+         /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include
+         /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_24b1b
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24b1b.dir/link.txt --verbose=1
+        Homebrew clang version 21.1.5
+        Target: arm64-apple-darwin23.3.0
+        Thread model: posix
+        InstalledDir: /opt/homebrew/Cellar/llvm/21.1.5/bin
+        Configuration file: /opt/homebrew/etc/clang/arm64-apple-darwin23.cfg
+        System configuration file directory: /opt/homebrew/etc/clang
+        User configuration file directory: /Users/bimal/.config/clang
+         "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/21.1.5/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_24b1b -L/opt/homebrew/opt/llvm/lib -v CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 13:21:42 Nov 10 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 21.1.5 (static support for 29, runtime is 30)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        	/opt/homebrew/opt/llvm/lib
+        Framework search paths:
+        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -L/opt/homebrew/opt/llvm/lib -v -Wl,-v CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_24b1b
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:122 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1]
+          add: [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include]
+          add: [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include]
+        end of search list found
+        collapse include dir [/opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1] ==> [/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1]
+        collapse include dir [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include] ==> [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include]
+        collapse include dir [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include] ==> [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include]
+        implicit include dirs: [/opt/homebrew/Cellar/llvm/21.1.5/include/c++/v1;/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_24b1b/fast]
+        ignore line: [/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_24b1b.dir/build.make CMakeFiles/cmTC_24b1b.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/opt/homebrew/opt/llvm/bin/clang++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Homebrew clang version 21.1.5]
+        ignore line: [Target: arm64-apple-darwin23.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/homebrew/Cellar/llvm/21.1.5/bin]
+        ignore line: [Configuration file: /opt/homebrew/etc/clang/arm64-apple-darwin23.cfg]
+        ignore line: [System configuration file directory: /opt/homebrew/etc/clang]
+        ignore line: [User configuration file directory: /Users/bimal/.config/clang]
+        ignore line: [clang++: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ (in-process)]
+        ignore line: [ "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-21" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Werror=undef-prefix -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -ffp-contract=on -fno-rounding-math -funwind-tables=1 -target-sdk-version=14.2 -fcompatibility-qualified-id-block-type-checking -fvisibility-inlines-hidden-static-local-var -fbuiltin-headers-in-system-modules -fdefine-target-os-macros -enable-tlsdesc -target-cpu apple-m1 -target-feature +v8.4a -target-feature +aes -target-feature +altnzcv -target-feature +ccdp -target-feature +ccpp -target-feature +complxnum -target-feature +crc -target-feature +dotprod -target-feature +flagm -target-feature +fp-armv8 -target-feature +fp16fml -target-feature +fptoint -target-feature +fullfp16 -target-feature +jsconv -target-feature +lse -target-feature +neon -target-feature +pauth -target-feature +perfmon -target-feature +predres -target-feature +ras -target-feature +rcpc -target-feature +rdm -target-feature +sb -target-feature +sha2 -target-feature +sha3 -target-feature +specrestrict -target-feature +ssbs -target-abi darwinpcs -debugger-tuning=lldb -fdebug-compilation-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M -target-linker-version 1115.7.3 -v -fcoverage-compilation-dir=/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-o4O56M -resource-dir /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21 -dependency-file CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -internal-isystem /opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1 -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/local/include -internal-isystem /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/SubFrameworks -internal-iframework /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/Library/Frameworks -fdeprecated-macro -ferror-limit 19 -stack-protector 1 -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -fmax-type-align=16 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 21.1.5 based upon LLVM 21.1.5 default target arm64-apple-darwin23.3.0]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/SubFrameworks"]
+        ignore line: [ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /opt/homebrew/Cellar/llvm/21.1.5/bin/../include/c++/v1]
+        ignore line: [ /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/usr/include]
+        ignore line: [ /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_24b1b]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24b1b.dir/link.txt --verbose=1]
+        ignore line: [Homebrew clang version 21.1.5]
+        ignore line: [Target: arm64-apple-darwin23.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /opt/homebrew/Cellar/llvm/21.1.5/bin]
+        ignore line: [Configuration file: /opt/homebrew/etc/clang/arm64-apple-darwin23.cfg]
+        ignore line: [System configuration file directory: /opt/homebrew/etc/clang]
+        ignore line: [User configuration file directory: /Users/bimal/.config/clang]
+        link line: [ "/usr/bin/ld" -demangle -lto_library /opt/homebrew/Cellar/llvm/21.1.5/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk -mllvm -enable-linkonceodr-outlining -o cmTC_24b1b -L/opt/homebrew/opt/llvm/lib -v CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/opt/homebrew/Cellar/llvm/21.1.5/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk] ==> ignore
+          arg [-mllvm] ==> ignore
+          arg [-enable-linkonceodr-outlining] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_24b1b] ==> ignore
+          arg [-L/opt/homebrew/opt/llvm/lib] ==> dir [/opt/homebrew/opt/llvm/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_24b1b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/lib/darwin/libclang_rt.osx.a] ==> lib [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /usr/bin/ld
+        Library search paths: [;/opt/homebrew/opt/llvm/lib]
+        remove lib [System]
+        remove lib [/opt/homebrew/Cellar/llvm/21.1.5/lib/clang/21/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        collapse library dir [/opt/homebrew/opt/llvm/lib] ==> [/opt/homebrew/opt/llvm/lib]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/opt/homebrew/opt/llvm/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:38 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+      BUILD 13:21:42 Nov 10 2023
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+      Library search paths:
+      Framework search paths:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:162 (check_cxx_source_compiles)"
+      - "/opt/homebrew/share/cmake/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:17 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-MQmeCp"
+      binary: "/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-MQmeCp"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/opt/homebrew/Cellar/llvm/21.1.5/bin/clang-scan-deps"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "-L/opt/homebrew/opt/llvm/lib"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-MQmeCp'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_daec5/fast
+        /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_daec5.dir/build.make CMakeFiles/cmTC_daec5.dir/build
+        Building CXX object CMakeFiles/cmTC_daec5.dir/src.cxx.o
+        /opt/homebrew/opt/llvm/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -arch arm64 -MD -MT CMakeFiles/cmTC_daec5.dir/src.cxx.o -MF CMakeFiles/cmTC_daec5.dir/src.cxx.o.d -o CMakeFiles/cmTC_daec5.dir/src.cxx.o -c /Users/bimal/Downloads/hft_lob/build/CMakeFiles/CMakeScratch/TryCompile-MQmeCp/src.cxx
+        Linking CXX executable cmTC_daec5
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_daec5.dir/link.txt --verbose=1
+        /opt/homebrew/opt/llvm/bin/clang++  -arch arm64 -L/opt/homebrew/opt/llvm/lib  CMakeFiles/cmTC_daec5.dir/src.cxx.o -o cmTC_daec5
+        
+      exitCode: 0
+...
