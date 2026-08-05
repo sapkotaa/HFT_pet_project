@@ -19,3 +19,14 @@ find_package(Threads REQUIRED)
 add_executable(hft_lob src/main.cpp)
 target_include_directories(hft_lob PRIVATE include)
 target_link_libraries(hft_lob PRIVATE Threads::Threads)
+
+add_executable(feed_publisher src/feed_publisher.cpp)
+target_include_directories(feed_publisher PRIVATE include)
+
+add_executable(engine_subscriber src/engine_subscriber.cpp)
+target_include_directories(engine_subscriber PRIVATE include)
+
+
+
+
+

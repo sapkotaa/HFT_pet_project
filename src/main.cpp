@@ -13,6 +13,7 @@
 #include "../include/strategy.hpp"
 #include "../include/timer.hpp"
 #include "../include/types.hpp"
+#include "../include/results.hpp"
 
 namespace {
 
@@ -156,5 +157,6 @@ int main(int argc, char** argv) {
     std::cout << "\n";
 
     hist.print_summary("order-to-book tick latency");
+    append_result_csv("results/history.csv",data_file.empty() ?"synthetic" : "csv_replay",processed,hist);
     return 0;
 }
