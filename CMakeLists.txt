@@ -37,13 +37,20 @@ target_compile_options(test_frame_reader PRIVATE -UNDEBUG)   # <-- here
 enable_testing()
 add_test(NAME frame_reader_tests COMMAND test_frame_reader)
 
-add_executable(test_session_state tests/test_session_state.cpp)
+add_executable(test_session_state tests/test_session_state.cpp
+  src/gateway_main.cpp)
 target_include_directories(test_session_state PRIVATE include)
 target_compile_features(test_session_state PRIVATE cxx_std_20)
 target_compile_options(test_session_state PRIVATE -UNDEBUG)
 target_link_libraries(test_session_state PRIVATE Threads::Threads)
 
 add_test(NAME session_state_tests COMMAND test_session_state)
+
+add_executable(gateway src/gateway_main.cpp)
+target_include_directories(gateway PRIVATE include)
+target_link_libraries(gateway PRIVATE Threads::Threads)
+
+
 
 
 

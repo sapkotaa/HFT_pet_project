@@ -204,6 +204,19 @@ test_session_state/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/build
 .PHONY : test_session_state/fast
 
+#=============================================================================
+# Target rules for targets named gateway
+
+# Build rule for target.
+gateway: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gateway
+.PHONY : gateway
+
+# fast build rule for target.
+gateway/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/build
+.PHONY : gateway/fast
+
 src/engine_subscriber.o: src/engine_subscriber.cpp.o
 .PHONY : src/engine_subscriber.o
 
@@ -251,6 +264,33 @@ src/feed_publisher.s: src/feed_publisher.cpp.s
 src/feed_publisher.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/feed_publisher.dir/build.make CMakeFiles/feed_publisher.dir/src/feed_publisher.cpp.s
 .PHONY : src/feed_publisher.cpp.s
+
+src/gateway_main.o: src/gateway_main.cpp.o
+.PHONY : src/gateway_main.o
+
+# target to build an object file
+src/gateway_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/src/gateway_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/gateway_main.cpp.o
+.PHONY : src/gateway_main.cpp.o
+
+src/gateway_main.i: src/gateway_main.cpp.i
+.PHONY : src/gateway_main.i
+
+# target to preprocess a source file
+src/gateway_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/src/gateway_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/gateway_main.cpp.i
+.PHONY : src/gateway_main.cpp.i
+
+src/gateway_main.s: src/gateway_main.cpp.s
+.PHONY : src/gateway_main.s
+
+# target to generate assembly for a file
+src/gateway_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/src/gateway_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gateway.dir/build.make CMakeFiles/gateway.dir/src/gateway_main.cpp.s
+.PHONY : src/gateway_main.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -359,6 +399,7 @@ help:
 	@echo "... test"
 	@echo "... engine_subscriber"
 	@echo "... feed_publisher"
+	@echo "... gateway"
 	@echo "... hft_lob"
 	@echo "... supervisor"
 	@echo "... test_frame_reader"
@@ -369,6 +410,9 @@ help:
 	@echo "... src/feed_publisher.o"
 	@echo "... src/feed_publisher.i"
 	@echo "... src/feed_publisher.s"
+	@echo "... src/gateway_main.o"
+	@echo "... src/gateway_main.i"
+	@echo "... src/gateway_main.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

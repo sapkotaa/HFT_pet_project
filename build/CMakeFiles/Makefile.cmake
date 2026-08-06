@@ -60,4 +60,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/supervisor.dir/DependInfo.cmake"
   "CMakeFiles/test_frame_reader.dir/DependInfo.cmake"
   "CMakeFiles/test_session_state.dir/DependInfo.cmake"
+  "CMakeFiles/gateway.dir/DependInfo.cmake"
   )
