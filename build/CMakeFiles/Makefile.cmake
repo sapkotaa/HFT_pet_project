@@ -58,4 +58,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/feed_publisher.dir/DependInfo.cmake"
   "CMakeFiles/engine_subscriber.dir/DependInfo.cmake"
   "CMakeFiles/supervisor.dir/DependInfo.cmake"
+  "CMakeFiles/test_frame_reader.dir/DependInfo.cmake"
+  "CMakeFiles/test_session_state.dir/DependInfo.cmake"
   )

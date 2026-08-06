@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /Users/bimal/Downloads/hft_lob/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/opt/homebrew/bin/ctest $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -168,6 +178,32 @@ supervisor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/build
 .PHONY : supervisor/fast
 
+#=============================================================================
+# Target rules for targets named test_frame_reader
+
+# Build rule for target.
+test_frame_reader: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_frame_reader
+.PHONY : test_frame_reader
+
+# fast build rule for target.
+test_frame_reader/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_frame_reader.dir/build.make CMakeFiles/test_frame_reader.dir/build
+.PHONY : test_frame_reader/fast
+
+#=============================================================================
+# Target rules for targets named test_session_state
+
+# Build rule for target.
+test_session_state: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_session_state
+.PHONY : test_session_state
+
+# fast build rule for target.
+test_session_state/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/build
+.PHONY : test_session_state/fast
+
 src/engine_subscriber.o: src/engine_subscriber.cpp.o
 .PHONY : src/engine_subscriber.o
 
@@ -264,6 +300,54 @@ src/supervisor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/supervisor.dir/build.make CMakeFiles/supervisor.dir/src/supervisor.cpp.s
 .PHONY : src/supervisor.cpp.s
 
+tests/test_frame_reader.o: tests/test_frame_reader.cpp.o
+.PHONY : tests/test_frame_reader.o
+
+# target to build an object file
+tests/test_frame_reader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_frame_reader.dir/build.make CMakeFiles/test_frame_reader.dir/tests/test_frame_reader.cpp.o
+.PHONY : tests/test_frame_reader.cpp.o
+
+tests/test_frame_reader.i: tests/test_frame_reader.cpp.i
+.PHONY : tests/test_frame_reader.i
+
+# target to preprocess a source file
+tests/test_frame_reader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_frame_reader.dir/build.make CMakeFiles/test_frame_reader.dir/tests/test_frame_reader.cpp.i
+.PHONY : tests/test_frame_reader.cpp.i
+
+tests/test_frame_reader.s: tests/test_frame_reader.cpp.s
+.PHONY : tests/test_frame_reader.s
+
+# target to generate assembly for a file
+tests/test_frame_reader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_frame_reader.dir/build.make CMakeFiles/test_frame_reader.dir/tests/test_frame_reader.cpp.s
+.PHONY : tests/test_frame_reader.cpp.s
+
+tests/test_session_state.o: tests/test_session_state.cpp.o
+.PHONY : tests/test_session_state.o
+
+# target to build an object file
+tests/test_session_state.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/tests/test_session_state.cpp.o
+.PHONY : tests/test_session_state.cpp.o
+
+tests/test_session_state.i: tests/test_session_state.cpp.i
+.PHONY : tests/test_session_state.i
+
+# target to preprocess a source file
+tests/test_session_state.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/tests/test_session_state.cpp.i
+.PHONY : tests/test_session_state.cpp.i
+
+tests/test_session_state.s: tests/test_session_state.cpp.s
+.PHONY : tests/test_session_state.s
+
+# target to generate assembly for a file
+tests/test_session_state.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_session_state.dir/build.make CMakeFiles/test_session_state.dir/tests/test_session_state.cpp.s
+.PHONY : tests/test_session_state.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -272,10 +356,13 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... engine_subscriber"
 	@echo "... feed_publisher"
 	@echo "... hft_lob"
 	@echo "... supervisor"
+	@echo "... test_frame_reader"
+	@echo "... test_session_state"
 	@echo "... src/engine_subscriber.o"
 	@echo "... src/engine_subscriber.i"
 	@echo "... src/engine_subscriber.s"
@@ -288,6 +375,12 @@ help:
 	@echo "... src/supervisor.o"
 	@echo "... src/supervisor.i"
 	@echo "... src/supervisor.s"
+	@echo "... tests/test_frame_reader.o"
+	@echo "... tests/test_frame_reader.i"
+	@echo "... tests/test_frame_reader.s"
+	@echo "... tests/test_session_state.o"
+	@echo "... tests/test_session_state.i"
+	@echo "... tests/test_session_state.s"
 .PHONY : help
 
 

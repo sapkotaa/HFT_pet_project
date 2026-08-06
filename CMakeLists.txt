@@ -28,5 +28,24 @@ target_include_directories(engine_subscriber PRIVATE include)
 
 add_executable(supervisor src/supervisor.cpp)
 
+add_executable(test_frame_reader tests/test_frame_reader.cpp)
+target_include_directories(test_frame_reader PRIVATE include)
+target_compile_features(test_frame_reader PRIVATE cxx_std_20)
+target_compile_options(test_frame_reader PRIVATE -UNDEBUG)   # <-- here
+
+
+enable_testing()
+add_test(NAME frame_reader_tests COMMAND test_frame_reader)
+
+add_executable(test_session_state tests/test_session_state.cpp)
+target_include_directories(test_session_state PRIVATE include)
+target_compile_features(test_session_state PRIVATE cxx_std_20)
+target_compile_options(test_session_state PRIVATE -UNDEBUG)
+target_link_libraries(test_session_state PRIVATE Threads::Threads)
+
+add_test(NAME session_state_tests COMMAND test_session_state)
+
+
+
 
 
