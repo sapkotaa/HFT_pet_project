@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>HFT Gateway — Live Blotter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0b0e14;
+    --panel: #12161f;
+    --panel-2: #171c28;
+    --border: #232838;
+    --text: #e6e9f0;
+    --text-dim: #7b8496;
+    --text-faint: #4b5266;
+    --accent: #4f8cff;
+    --buy: #22c55e;
+    --sell: #ef4444;
+    --warn: #f59e0b;
+    --mono: "SF Mono", "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 14px;
+  }
+  #app { display: flex; flex-direction: column; height: 100vh; }
+
+  header {
+    display: flex; align-items: center; gap: 20px;
+    padding: 14px 20px; border-bottom: 1px solid var(--border);
+    background: var(--panel);
+  }
+  header h1 {
+    font-size: 15px; font-weight: 600; margin: 0; letter-spacing: 0.2px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  header h1 .dot { color: var(--accent); }
+  .spacer { flex: 1; }
+
+  .status-group { display: flex; gap: 14px; }
+  .status-pill {
+    display: flex; align-items: center; gap: 7px;
+    font-size: 12px; color: var(--text-dim);
+    padding: 5px 10px; border-radius: 20px; background: var(--panel-2);
+    border: 1px solid var(--border);
+  }
+  .status-pill .led {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--text-faint);
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: background 0.2s, box-shadow 0.2s;
+  }
+  .status-pill.up .led { background: var(--buy); box-shadow: 0 0 8px var(--buy); }
+  .status-pill.down .led { background: var(--sell); box-shadow: 0 0 8px var(--sell); }
+
+  .stats { display: flex; gap: 18px; font-family: var(--mono); font-size: 12px; }
+  .stat { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+  .stat .val { color: var(--text); font-size: 15px; font-weight: 600; }
+  .stat .lbl { color: var(--text-faint); font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  main { flex: 1; display: flex; overflow: hidden; }
+
+  aside {
+    width: 260px; flex-shrink: 0; padding: 18px; border-right: 1px solid var(--border);
+    background: var(--panel); overflow-y: auto;
+  }
+  aside h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--text-faint); margin: 0 0 14px; }
+
+  .side-toggle { display: flex; gap: 8px; margin-bottom: 14px; }
+  .side-btn {
+    flex: 1; padding: 10px 0; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel-2); color: var(--text-dim); font-weight: 600; font-size: 13px;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .side-btn.buy.active { background: rgba(34,197,94,0.15); border-color: var(--buy); color: var(--buy); }
+  .side-btn.sell.active { background: rgba(239,68,68,0.15); border-color: var(--sell); color: var(--sell); }
+
+  label { display: block; font-size: 11px; color: var(--text-faint); margin: 10px 0 5px; text-transform: uppercase; letter-spacing: 0.4px; }
+  input[type=number] {
+    width: 100%; padding: 9px 10px; border-radius: 8px; border: 1px solid var(--border);
+    background: var(--panel-2); color: var(--text); font-family: var(--mono); font-size: 14px;
+  }
+  input[type=number]:focus { outline: none; border-color: var(--accent); }
+
+  #submit-btn {
+    width: 100%; margin-top: 16px; padding: 11px 0; border-radius: 8px; border: none;
+    background: var(--accent); color: white; font-weight: 600; font-size: 13px; cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  #submit-btn:hover { opacity: 0.88; }
+  #submit-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  #form-error { font-size: 12px; color: var(--sell); margin-top: 8px; min-height: 16px; }
+
+  .divider { height: 1px; background: var(--border); margin: 20px 0; }
+
+  .legend { display: flex; flex-direction: column; gap: 6px; font-size: 11px; color: var(--text-dim); }
+  .legend .row { display: flex; align-items: center; gap: 8px; }
+  .badge { display: inline-block; }
+
+  section.blotter { flex: 1; overflow: auto; padding: 0; }
+  table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12.5px; }
+  thead th {
+    position: sticky; top: 0; background: var(--panel);
+    text-align: right; padding: 10px 14px; font-weight: 600; color: var(--text-faint);
+    text-transform: uppercase; font-size: 10px; letter-spacing: 0.5px; border-bottom: 1px solid var(--border);
+    z-index: 1;
+  }
+  thead th:first-child, thead th:nth-child(2) { text-align: left; }
+  tbody td { padding: 9px 14px; text-align: right; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  tbody td:first-child, tbody td:nth-child(2) { text-align: left; }
+  tbody tr:hover { background: rgba(255,255,255,0.02); }
+  tbody tr.flash { animation: flash 0.7s ease-out; }
+  @keyframes flash { 0% { background: rgba(79,140,255,0.18); } 100% { background: transparent; } }
+
+  .side-tag { font-weight: 700; }
+  .side-tag.buy { color: var(--buy); }
+  .side-tag.sell { color: var(--sell); }
+
+  .badge {
+    padding: 3px 9px; border-radius: 20px; font-size: 10.5px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.3px;
+  }
+  .badge.Submitted { background: rgba(123,132,150,0.18); color: var(--text-dim); }
+  .badge.Accepted { background: rgba(79,140,255,0.16); color: var(--accent); }
+  .badge.PartialFill { background: rgba(245,158,11,0.16); color: var(--warn); }
+  .badge.Filled { background: rgba(34,197,94,0.16); color: var(--buy); }
+  .badge.Canceled { background: rgba(123,132,150,0.18); color: var(--text-dim); }
+  .badge.Rejected { background: rgba(239,68,68,0.16); color: var(--sell); }
+
+  .cancel-btn {
+    padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border);
+    background: transparent; color: var(--text-dim); font-size: 11px; cursor: pointer;
+  }
+  .cancel-btn:hover { border-color: var(--sell); color: var(--sell); }
+
+  #empty-state { padding: 60px 20px; text-align: center; color: var(--text-faint); font-size: 13px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <h1><span class="dot">●</span> HFT Gateway — Live Blotter</h1>
+    <div class="spacer"></div>
+    <div class="stats">
+      <div class="stat"><span class="val" id="stat-sent">0</span><span class="lbl">Sent</span></div>
+      <div class="stat"><span class="val" id="stat-fills">0</span><span class="lbl">Fills</span></div>
+      <div class="stat"><span class="val" id="stat-cancels">0</span><span class="lbl">Cancels</span></div>
+      <div class="stat"><span class="val" id="stat-rejects">0</span><span class="lbl">Rejects</span></div>
+    </div>
+    <div class="status-group">
+      <div class="status-pill" id="pill-bridge"><span class="led"></span>Bridge</div>
+      <div class="status-pill" id="pill-gateway"><span class="led"></span>Gateway</div>
+    </div>
+  </header>
+
+  <main>
+    <aside>
+      <h2>New Order</h2>
+      <div class="side-toggle">
+        <button class="side-btn buy active" id="btn-buy" type="button">Buy</button>
+        <button class="side-btn sell" id="btn-sell" type="button">Sell</button>
+      </div>
+      <label for="in-price">Price</label>
+      <input type="number" id="in-price" value="100" min="1" step="1">
+      <label for="in-qty">Quantity</label>
+      <input type="number" id="in-qty" value="10" min="1" step="1">
+      <button id="submit-btn">Submit Order</button>
+      <div id="form-error"></div>
+
+      <div class="divider"></div>
+      <h2>Status Legend</h2>
+      <div class="legend">
+        <div class="row"><span class="badge Submitted">Submitted</span> sent, awaiting sequencer</div>
+        <div class="row"><span class="badge Accepted">Accepted</span> resting in the book</div>
+        <div class="row"><span class="badge PartialFill">Partial</span> partially filled, still resting</div>
+        <div class="row"><span class="badge Filled">Filled</span> fully filled</div>
+        <div class="row"><span class="badge Canceled">Canceled</span> removed from the book</div>
+        <div class="row"><span class="badge Rejected">Rejected</span> never entered the book</div>
+      </div>
+    </aside>
+
+    <section class="blotter">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th><th>Side</th><th>Client ID</th><th>Exch ID</th>
+            <th>Price</th><th>Qty</th><th>Status</th>
+            <th>Fill Px</th><th>Fill Qty</th><th>Leaves</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="blotter-body"></tbody>
+      </table>
+      <div id="empty-state" style="display:none">No orders yet — submit one from the panel on the left.</div>
+    </section>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
