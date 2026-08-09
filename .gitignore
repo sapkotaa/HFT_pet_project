@@ -1,4 +1,5 @@
 build/
 *.o
 results/*.png
+wal/
 __pycache__/

@@ -4,6 +4,9 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <fcntl.h>
+#include "event.hpp"
+#include "sequencer.hpp"
+#include "outbound_ack.hpp"
 #include <unistd.h>
 #include <cstring>
 #include <unordered_map>
@@ -18,9 +21,14 @@ struct ConnectionState {
     SessionState  session;
 };
 
+struct RiskEngine {
+    bool check(int /*fd*/, const NewOrderMsg& /*order*/) { return true; }
+};
+
 class GatewayServer {
 public:
-    explicit GatewayServer(uint16_t port) : port_(port) {}
+    GatewayServer(uint16_t port, InputQueue* sequencer_input, AckQueue* acks)
+        : port_(port), sequencer_input_(sequencer_input), acks_(acks) {}
 
     bool start() {
         listen_fd_ = socket(AF_INET, SOCK_STREAM, 0);
@@ -67,6 +75,7 @@ public:
         }
 
         check_heartbeats();
+        drain_acks();
     }
 
 private:
@@ -155,25 +164,58 @@ private:
                 break;
             }
 
+           
             case MsgType::NewOrder: {
+    report_seq_gap_if_any(fd, session, header.seq_num);
+    if (header.body_length < sizeof(NewOrderMsg)) return;
+
+    NewOrderMsg order;
+    std::memcpy(&order, body, sizeof(NewOrderMsg));
+
+  if (!risk_.check(fd, order)) {
+        send_execution_report(fd, session, order.client_order_id,
+                              ExecStatus::Rejected, 0, 0, 0);
+        break;
+    }
+
+SequencedEvent ev{};
+ev.type = EventType::NewOrder;
+ev.session_id = static_cast<uint32_t>(fd);
+ev.client_order_id = order.client_order_id;
+ev.side = order.side;
+ev.price = order.price;
+ev.quantity = order.quantity;
+
+    if(!sequencer_input_ -> push(ev)){
+        send_execution_report(fd,session,order.client_order_id,ExecStatus::Rejected,0,0,0);
+    }
+    // No synchronous Accepted here — real Accepted/PartialFill/Filled/
+    // Rejected now arrives asynchronously via drain_acks() once the
+    // sequencer + matching engine process this event.
+    break;
+}
+
+            case MsgType::CancelOrder: {
                 report_seq_gap_if_any(fd, session, header.seq_num);
-                if (header.body_length < sizeof(NewOrderMsg)) return;
+                if (header.body_length < sizeof(CancelOrderMsg)) return;
 
-                NewOrderMsg order;
-                std::memcpy(&order, body, sizeof(NewOrderMsg));
+                CancelOrderMsg cancel;
+                std::memcpy(&cancel, body, sizeof(CancelOrderMsg));
 
-                // TODO: push onto the SPSC queue toward the matching engine
-                // once that handoff exists. For now, ack receipt so the
-                // framing/session/dispatch path is provably correct
-                // end-to-end before the engine integration is built.
-                std::cout << "fd=" << fd
-                          << " NewOrder client_order_id=" << order.client_order_id
-                          << " side=" << (order.side == Side::Buy ? "BUY" : "SELL")
-                          << " price=" << order.price
-                          << " qty=" << order.quantity << "\n";
+                SequencedEvent cev{};   // zero-init: side/price/quantity are
+                                        // meaningless for a cancel, left at
+                                        // their zero defaults, unused.
+                cev.type = EventType::CancelOrder;
+                cev.session_id = static_cast<uint32_t>(fd);
+                cev.client_order_id = cancel.client_order_id;
 
-                send_execution_report(fd, session, order.client_order_id,
-                                       ExecStatus::Accepted, 0, 0, order.quantity);
+                if (!sequencer_input_->push(cev)) {
+                    send_execution_report(fd, session, cancel.client_order_id,
+                                          ExecStatus::Rejected, 0, 0, 0);
+                }
+                // No synchronous ack on success — real Canceled/Rejected
+                // comes back via drain_acks() once the matching engine
+                // resolves it.
                 break;
             }
 
@@ -185,6 +227,20 @@ private:
 
             default:
                 break;   // unknown/unhandled type — ignore rather than crash
+        }
+    }
+
+    void drain_acks() {
+        OutboundAck ack;
+        while (acks_->pop(ack)) {
+            auto it = connections_.find(static_cast<int>(ack.session_id));
+            if (it == connections_.end()) continue;   // client disconnected before its ack arrived
+            ExecutionReportMsg report{ack.client_order_id, ack.exchange_order_id, ack.status,
+                                       ack.fill_price, ack.fill_quantity, ack.leaves_quantity};
+            send_frame(static_cast<int>(ack.session_id), MsgType::ExecutionReport,
+                       it->second.session.next_outbound_seq(),
+                       reinterpret_cast<uint8_t*>(&report), sizeof(report));
+            it->second.session.mark_outbound_activity();
         }
     }
 
@@ -258,7 +314,9 @@ private:
                    reinterpret_cast<uint8_t*>(&report), sizeof(report));
         session.mark_outbound_activity();
     }
-
+    RiskEngine risk_;
+    InputQueue* sequencer_input_;
+    AckQueue* acks_;
     uint16_t port_;
     int listen_fd_ = -1;
     int kq_ = -1;

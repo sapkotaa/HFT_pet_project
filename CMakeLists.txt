@@ -37,8 +37,7 @@ target_compile_options(test_frame_reader PRIVATE -UNDEBUG)   # <-- here
 enable_testing()
 add_test(NAME frame_reader_tests COMMAND test_frame_reader)
 
-add_executable(test_session_state tests/test_session_state.cpp
-  src/gateway_main.cpp)
+add_executable(test_session_state tests/test_session_state.cpp)
 target_include_directories(test_session_state PRIVATE include)
 target_compile_features(test_session_state PRIVATE cxx_std_20)
 target_compile_options(test_session_state PRIVATE -UNDEBUG)
@@ -50,7 +49,25 @@ add_executable(gateway src/gateway_main.cpp)
 target_include_directories(gateway PRIVATE include)
 target_link_libraries(gateway PRIVATE Threads::Threads)
 
+add_executable(test_broadcast_ring tests/test_broadcast_ring.cpp)
+target_include_directories(test_broadcast_ring PRIVATE include)
+target_compile_features(test_broadcast_ring PRIVATE cxx_std_20)
+target_compile_options(test_broadcast_ring PRIVATE -UNDEBUG)
+add_test(NAME broadcast_ring_tests COMMAND test_broadcast_ring)
 
+add_executable(test_matching_engine_consumer tests/test_matching_engine_consumer.cpp)
+target_include_directories(test_matching_engine_consumer PRIVATE include)
+target_compile_features(test_matching_engine_consumer PRIVATE cxx_std_20)
+target_compile_options(test_matching_engine_consumer PRIVATE -UNDEBUG)
+target_link_libraries(test_matching_engine_consumer PRIVATE Threads::Threads)
+add_test(NAME matching_engine_consumer_tests COMMAND test_matching_engine_consumer)
+
+add_executable(test_wal_consumer tests/test_wal_consumer.cpp)
+target_include_directories(test_wal_consumer PRIVATE include)
+target_compile_features(test_wal_consumer PRIVATE cxx_std_20)
+target_compile_options(test_wal_consumer PRIVATE -UNDEBUG)
+target_link_libraries(test_wal_consumer PRIVATE Threads::Threads)
+add_test(NAME wal_consumer_tests COMMAND test_wal_consumer)
 
 
 
