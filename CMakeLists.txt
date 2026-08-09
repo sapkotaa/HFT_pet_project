@@ -15,6 +15,7 @@ if(NATIVE_ARCH)
 endif()
 
 find_package(Threads REQUIRED)
+find_package(SQLite3 REQUIRED)
 
 add_executable(hft_lob src/main.cpp)
 target_include_directories(hft_lob PRIVATE include)
@@ -47,7 +48,7 @@ add_test(NAME session_state_tests COMMAND test_session_state)
 
 add_executable(gateway src/gateway_main.cpp)
 target_include_directories(gateway PRIVATE include)
-target_link_libraries(gateway PRIVATE Threads::Threads)
+target_link_libraries(gateway PRIVATE Threads::Threads SQLite3::SQLite3)
 
 add_executable(test_broadcast_ring tests/test_broadcast_ring.cpp)
 target_include_directories(test_broadcast_ring PRIVATE include)
@@ -68,6 +69,13 @@ target_compile_features(test_wal_consumer PRIVATE cxx_std_20)
 target_compile_options(test_wal_consumer PRIVATE -UNDEBUG)
 target_link_libraries(test_wal_consumer PRIVATE Threads::Threads)
 add_test(NAME wal_consumer_tests COMMAND test_wal_consumer)
+
+add_executable(test_db_consumer tests/test_db_consumer.cpp)
+target_include_directories(test_db_consumer PRIVATE include)
+target_compile_features(test_db_consumer PRIVATE cxx_std_20)
+target_compile_options(test_db_consumer PRIVATE -UNDEBUG)
+target_link_libraries(test_db_consumer PRIVATE Threads::Threads SQLite3::SQLite3)
+add_test(NAME db_consumer_tests COMMAND test_db_consumer)
 
 
 

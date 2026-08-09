@@ -6,7 +6,6 @@
 #include <string>
 #include <thread>
 #include <unistd.h>       // fsync
-#include "broadcast_ring.hpp"
 #include "event.hpp"
 #include "sequencer.hpp"  // OutputRing typedef
 

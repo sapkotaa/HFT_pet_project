@@ -5,7 +5,6 @@
 #include <thread>
 #include <unordered_map>
 #include <vector>
-#include "broadcast_ring.hpp"
 #include "event.hpp"
 #include "order_book.hpp"
 #include "outbound_ack.hpp"
@@ -46,8 +45,12 @@ struct RestingOrderInfo {
 template <size_t PoolCapacity = 1 << 20>
 class MatchingEngineConsumer {
 public:
-    MatchingEngineConsumer(OutputRing& ring, AckQueue& acks)
-        : ring_(ring), acks_(acks), consumer_id_(ring.register_consumer()) {}
+    // `fills` is optional: a second, independent single-consumer queue
+    // (distinct instance from `acks`, same struct) that mirrors every ack
+    // for persistence — e.g. DbConsumer. Nullptr means "no persistence
+    // sink," which is what the unit tests use.
+    MatchingEngineConsumer(OutputRing& ring, AckQueue& acks, AckQueue* fills = nullptr)
+        : ring_(ring), acks_(acks), fills_(fills), consumer_id_(ring.register_consumer()) {}
 
     void start() {
         running_.store(true, std::memory_order_release);
@@ -77,6 +80,7 @@ public:
 
     size_t resting_orders() const { return book_.resting_orders(); }
     uint64_t acks_dropped() const { return acks_dropped_; }
+    uint64_t fills_dropped() const { return fills_dropped_; }
 
 private:
     void run() {
@@ -168,6 +172,12 @@ private:
             if (spins > kMaxSpins) { ++acks_dropped_; return; }
             cpu_pause();
         }
+        // Persistence is best-effort, not correctness-critical for the
+        // trading path: a single non-blocking try, drop + count on
+        // overflow rather than spinning. Unlike the client-facing ack
+        // above, losing a row here just means a gap in analytics, not a
+        // client never learning their order's fate.
+        if (fills_ && !fills_->push(ack)) ++fills_dropped_;
     }
 
     static void cpu_pause() {
@@ -181,11 +191,13 @@ private:
     OrderBook<PoolCapacity> book_;
     OutputRing& ring_;
     AckQueue&   acks_;
+    AckQueue*   fills_;
     size_t      consumer_id_;
     std::unordered_map<OrderKey, OrderId, OrderKeyHash> by_client_;
     std::unordered_map<OrderId, RestingOrderInfo>        resting_;
     std::vector<Trade> trades_;
     uint64_t    acks_dropped_ = 0;
+    uint64_t    fills_dropped_ = 0;
     std::atomic<bool> running_{false};
     std::thread thread_;
 };
