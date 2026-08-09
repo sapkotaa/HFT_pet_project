@@ -86,10 +86,11 @@ in historical queries.**
 - 6 ctest suites, all passing: `frame_reader_tests`, `session_state_tests`,
   `broadcast_ring_tests`, `matching_engine_consumer_tests`,
   `wal_consumer_tests`, `db_consumer_tests`.
-- Two commits made so far this session (`bdf328f` matching engine + WAL,
-  `c70c2de` first UI pass) — **the SQLite persistence + UI v2 work is not
-  yet committed as of writing this file**; check `git status` before
-  assuming it's saved.
+- Three commits made this session: `bdf328f` (matching engine + WAL),
+  `c70c2de` (first UI pass), `0ea1598` (SQLite persistence + UI v2
+  redesign + README/HANDOFF). All pushed to local `main`, not yet pushed
+  to `origin` — check `git status`/`git log origin/main..HEAD` before
+  assuming a remote has it.
 - `./build/gateway 9000` and `python3 scripts/web_bridge.py --gateway-port 9000`
   have been running throughout testing on this machine — check
   `pgrep -f "build/gateway"` / `pgrep -f web_bridge.py` before assuming
